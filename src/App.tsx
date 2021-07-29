@@ -3,6 +3,7 @@ import {AuthenticationProvider} from "./auth";
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PrivateRoute from "./auth/PrivateRoute";
+import {Login} from "./pages/Login";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
           <BrowserRouter>
               <Routes>
                   <Route path={"/login"}>
-                      <h1>Login</h1>
+                      <Login />
                   </Route>
                   <PrivateRoute path={"/"} roles={["user"]}>
                       <h1>Private</h1>
