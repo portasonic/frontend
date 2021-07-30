@@ -10,13 +10,13 @@ function App() {
     <AuthenticationProvider>
       <BrowserRouter>
         <Routes>
-          <Route path={"/login"}>
+          <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path={"/"} roles={["user"]}>
+          <PrivateRoute path="/" roles={["user"]}>
             <h1>Private</h1>
           </PrivateRoute>
-          <Route path={"/*"}>
+          <Route path="/*">
             <h1>Test</h1>
           </Route>
         </Routes>

@@ -20,8 +20,11 @@ const PrivateRoute: FunctionComponent<PrivateRouteProperties> = ({
       .map((role) => identity!.roles.indexOf(role) >= 0)
       .reduce((p, c) => p && c);
 
-  if (ok) return <Route {...props} />;
-  else return <Navigate to="/login" />;
+  if (ok) {
+    return <Route {...props} />;
+  } else {
+    return <Navigate to="/login" />;
+  }
 };
 
 export default PrivateRoute;
