@@ -1,2 +1,1 @@
-
-export const PRODUCT_NAME = "protasonic"
+export const PRODUCT_NAME = "protasonic";
