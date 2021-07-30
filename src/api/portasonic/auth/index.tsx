@@ -21,7 +21,7 @@ const emptyAuthState: AuthState = {
     throw "this is an empty auth state";
   },
   getApiClient: () => {
-    throw "this is an empty";
+    throw "this is an empty api client";
   },
 };
 

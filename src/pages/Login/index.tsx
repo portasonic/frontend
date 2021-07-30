@@ -37,7 +37,7 @@ export const Login = () => {
     >
       <Grid item xs={5}>
         <Paper elevation={3}>
-          <Typography variant={"h4"}>{PRODUCT_NAME}</Typography>
+          <Typography variant="h4">{PRODUCT_NAME}</Typography>
           <Formik<LoginFormValues>
             initialValues={{
               username: "",
